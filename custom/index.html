@@ -133,6 +133,7 @@
                       <ul class="dropdown-menu">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
+                        <li class="disabled"><a href="#">Disabled action</a></li>
                         <li><a href="#">Something else here</a></li>
                         <li class="divider"></li>
                         <li class="dropdown-header">Dropdown header</li>
@@ -144,6 +145,7 @@
                   <form class="navbar-form navbar-left">
                     <input type="text" class="form-control col-lg-8" placeholder="Search">
                   </form>
+                  <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
                   <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Link</a></li>
                     <li class="dropdown">
@@ -179,6 +181,7 @@
                       <ul class="dropdown-menu">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
+                        <li class="disabled"><a href="#">Disabled action</a></li>
                         <li><a href="#">Something else here</a></li>
                         <li class="divider"></li>
                         <li class="dropdown-header">Dropdown header</li>
@@ -190,6 +193,7 @@
                   <form class="navbar-form navbar-left">
                     <input type="text" class="form-control col-lg-8" placeholder="Search">
                   </form>
+                  <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
                   <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Link</a></li>
                     <li class="dropdown">
@@ -320,6 +324,21 @@
               </p>
             </div>
             
+            <div class="bs-example">
+              <p>
+                <a href="#" class="btn btn-primary btn-lg" role="button">Primary link</a>
+                <a href="#" class="btn btn-default btn-lg" role="button">Link</a>
+              </p>
+              <p>
+                <a href="#" class="btn btn-primary btn-lg active" role="button">Active Primary link</a>
+                <a href="#" class="btn btn-default btn-lg active" role="button">Active Link</a>
+              <p>
+              </p>
+                <button type="button" class="btn btn-primary btn-lg active">Active Primary button</button>
+                <button type="button" class="btn btn-default btn-lg active">Active Button</button>
+              </p>
+            </div>
+            
           </div>
           <div class="col-lg-6">
 
@@ -354,9 +373,9 @@
                 <div class="btn-group">
                   <button type="button" class="btn btn-default">8</button>
 
-                  <div class="btn-group">
+                  <div class="btn-group dropup">
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                      Dropdown
+                      Dropup
                       <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
@@ -369,12 +388,29 @@
               </div>
             </div>
 
-            <div class="bs-example">
+            <div class="bs-example" style="margin-bottom: 15px;">
               <div class="btn-group-vertical">
                   <button type="button" class="btn btn-default">Button</button>
                   <button type="button" class="btn btn-default">Button</button>
                   <button type="button" class="btn btn-default">Button</button>
                   <button type="button" class="btn btn-default">Button</button>
+              </div>
+            </div>
+
+            <div class="bs-example">
+              <div class="btn-toolbar" role="toolbar">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-left"></span></button>
+                  <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-center"></span></button>
+                  <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-right"></span></button>
+                  <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-justify"></span></button>
+                </div>
+              </div>
+              <div class="btn-toolbar" role="toolbar">
+                <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-star"></span> Star</button>
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-star"></span> Star</button>
+                <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-star"></span> Star</button>
+                <button type="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-star"></span> Star</button>
               </div>
             </div>
 
@@ -396,31 +432,53 @@
         <!-- Headings -->
 
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-6">
             <div class="bs-example bs-example-type">
-              <h1>Heading 1</h1>
-              <h2>Heading 2</h2>
-              <h3>Heading 3</h3>
-              <h4>Heading 4</h4>
-              <h5>Heading 5</h5>
-              <h6>Heading 6</h6>
+              <h1>Heading 1 <small>secondary tag,</small><span class=small>class</span></h1>
+              <h2>Heading 2 <small>secondary tag,</small><span class=small>class</span></h2>
+              <h3>Heading 3 <small>secondary tag,</small><span class=small>class</span></h3>
+              <h4>Heading 4 <small>secondary tag,</small><span class=small>class</span></h4>
+              <h5>Heading 5 <small>secondary tag,</small><span class=small>class</span></h5>
+              <h6>Heading 6 <small>secondary tag,</small><span class=small>class</span></h6>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="bs-example bs-example-type">
+              <p class=h1>Heading 1 <small>secondary tag,</small><span class=small>class</span></p>
+              <p class=h2>Heading 2 <small>secondary tag,</small><span class=small>class</span></p>
+              <p class=h3>Heading 3 <small>secondary tag,</small><span class=small>class</span></p>
+              <p class=h4>Heading 4 <small>secondary tag,</small><span class=small>class</span></p>
+              <p class=h5>Heading 5 <small>secondary tag,</small><span class=small>class</span></p>
+              <p class=h6>Heading 6 <small>secondary tag,</small><span class=small>class</span></p>
             </div>
             <div class="bs-example">
               <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
             </div>     
           </div>
-          <div class="col-lg-4">
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
             <div class="bs-example">
               <h2>Example body text</h2>
               <p>Nullam quis risus eget <a href="#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-              <p><small>This line of text is meant to be treated as fine print.</small></p>
-              <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
-              <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+              <p><small>This line of text is meant to be treated as fine <small>smaller <small>smallest</small></small> print.</small></p>
+              <p class=small>This line of text is meant to be treated as fine <span class=small>smaller <span class=small>smallest</span></span>print.</p>
+              <p>The following snippet of text is <strong>rendered as <strong>bold</strong> text</strong>.</p>
+              <p>The following snippet of text is <b>rendered as <b>bold</b> text</b>.</p>
+              <p>The following snippet of text is <em>rendered as <em>italicized</em> text</em>.</p>
+              <p>The following snippet of text is <i>rendered as <i>italicized</i> text</i>.</p>
               <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+              <p>An abbreviation of the word attribute is <abbr title="attribute" class="initialism">attr</abbr> (initialism).</p>
+              <p class="text-left">Left aligned text.</p>
+        <p class="text-center">Center aligned text.</p>
+        <p class="text-right">Right aligned text.</p>
             </div>
 
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-6">
 
             <h2>Emphasis classes</h2>
             <div class="bs-example">
@@ -432,6 +490,184 @@
               <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
             </div>
             
+          </div>
+        </div>
+
+        <!-- Addresses -->
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 id="type-addresses">Addresses</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <address>
+              <strong>Twitter, Inc.</strong><br>
+              795 Folsom Ave, Suite 600<br>
+              San Francisco, CA 94107<br>
+              <abbr title="Phone">P:</abbr> (123) 456-7890
+            </address>
+            <address>
+              <strong>Full Name</strong><br>
+              <a href="mailto:#">first.last@example.com</a>
+            </address>
+          </div>
+          <div class="col-lg-6">
+            <p>
+              <strong>Twitter, Inc.</strong><br>
+              795 Folsom Ave, Suite 600<br>
+              San Francisco, CA 94107<br>
+              <abbr title="Phone">P:</abbr> (123) 456-7890
+            </p>
+            <p>
+              <strong>Full Name</strong><br>
+              <a href="mailto:#">first.last@example.com</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Lists -->
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 id="type-lists">Lists</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul>
+              <li>Lorem ipsum dolor sit amet
+              <li>Consectetur adipiscing elit
+              <li>Integer molestie lorem at massa
+                <ul>
+                  <li>Facilisis in pretium nisl aliquet
+                  <li>Nulla volutpat aliquam velit
+                    <ul>
+                      <li>Phasellus iaculis neque
+                      <li>Purus sodales ultricies
+                        <ul>
+                          <li>Vestibulum laoreet porttitor sem
+                          <li>Ac tristique libero volutpat at
+                        </ul>
+                    </ul>
+                  <li>Faucibus porta lacus fringilla vel
+                </ul>
+              <li>Aenean sit amet erat nunc
+              <li>Eget porttitor lorem
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ol>
+              <li>Lorem ipsum dolor sit amet
+              <li>Consectetur adipiscing elit
+              <li>Integer molestie lorem at massa
+                <ol>
+                  <li>Facilisis in pretium nisl aliquet
+                  <li>Nulla volutpat aliquam velit
+                    <ol>
+                      <li>Phasellus iaculis neque
+                      <li>Purus sodales ultricies
+                        <ol>
+                          <li>Vestibulum laoreet porttitor sem
+                          <li>Ac tristique libero volutpat at
+                        </ol>
+                    </ol>
+                  <li>Faucibus porta lacus fringilla vel
+                </ol>
+              <li>Aenean sit amet erat nunc
+              <li>Eget porttitor lorem
+            </ol>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="list-unstyled">
+              <li>Lorem ipsum dolor sit amet
+              <li>Consectetur adipiscing elit
+              <li>Integer molestie lorem at massa
+                <ul>
+                  <li>Facilisis in pretium nisl aliquet
+                  <li>Nulla volutpat aliquam velit
+                    <ul class="list-unstyled">
+                      <li>Phasellus iaculis neque
+                      <li>Purus sodales ultricies
+                        <ul>
+                          <li>Vestibulum laoreet porttitor sem
+                          <li>Ac tristique libero volutpat at
+                        </ul>
+                    </ul>
+                  <li>Faucibus porta lacus fringilla vel
+                </ul>
+              <li>Aenean sit amet erat nunc
+              <li>Eget porttitor lorem
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ol class="list-unstyled">
+              <li>Lorem ipsum dolor sit amet
+              <li>Consectetur adipiscing elit
+              <li>Integer molestie lorem at massa
+                <ol>
+                  <li>Facilisis in pretium nisl aliquet
+                  <li>Nulla volutpat aliquam velit
+                    <ol class="list-unstyled">
+                      <li>Phasellus iaculis neque
+                      <li>Purus sodales ultricies
+                        <ol>
+                          <li>Vestibulum laoreet porttitor sem
+                          <li>Ac tristique libero volutpat at
+                        </ol>
+                    </ol>
+                  <li>Faucibus porta lacus fringilla vel
+                </ol>
+              <li>Aenean sit amet erat nunc
+              <li>Eget porttitor lorem
+            </ol>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="list-inline">
+              <li>Item
+              <li>Item
+              <li>Item
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ol class="list-inline">
+              <li>Item
+              <li>Item
+              <li>Item
+            </ol>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <dl>
+              <dt>Description lists</dt>
+              <dd>A description list is perfect for defining terms.</dd>
+              <dt>Euismod</dt>
+              <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+              <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+              <dt>Malesuada porta</dt>
+              <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+              <dt>Felis euismod semper eget lacinia</dt>
+              <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+            </dl>
+          </div>
+          <div class="col-lg-6">
+            <dl class="dl-horizontal">
+              <dt>Description lists</dt>
+              <dd>A description list is perfect for defining terms.</dd>
+              <dt>Euismod</dt>
+              <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+              <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+              <dt>Malesuada porta</dt>
+              <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+              <dt>Felis euismod semper eget lacinia</dt>
+              <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+            </dl>
           </div>
         </div>
 
@@ -458,6 +694,46 @@
         </div>
       </div>
 
+      <!-- Code
+      ================================================== -->
+      <div class="bs-docs-section">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="type">Code</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+          </div>
+          <div class="col-lg-4">
+            <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+            <pre>&lt;p&gt;Sample text here...&lt;/p&gt;
+                &lt;p&gt;Sample text here...&lt;/p&gt;
+                &lt;p&gt;Sample text here...&lt;/p&gt;
+                &lt;p&gt;Sample text here...&lt;/p&gt;
+                &lt;p&gt;Sample text here...&lt;/p&gt;
+                &lt;p&gt;Sample text here...&lt;/p&gt;
+                &lt;p&gt;Sample text here...&lt;/p&gt;
+            </pre>
+          </div>
+          <div class="col-lg-4">
+            <pre class="pre-scrollable">&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+            <pre class="pre-scrollable">&lt;p&gt;Sample text here...&lt;/p&gt;
+                &lt;p&gt;Sample text here...&lt;/p&gt;
+                &lt;p&gt;Sample text here...&lt;/p&gt;
+                &lt;p&gt;Sample text here...&lt;/p&gt;
+                &lt;p&gt;Sample text here...&lt;/p&gt;
+                &lt;p&gt;Sample text here...&lt;/p&gt;
+                &lt;p&gt;Sample text here...&lt;/p&gt;
+            </pre>
+          </div>
+        </div>
+      </div>
+
       <!-- Tables
       ================================================== -->
       <div class="bs-docs-section">
@@ -466,6 +742,59 @@
           <div class="col-lg-12">
             <div class="page-header">
               <h1 id="tables">Tables</h1>
+            </div>
+
+            <div class="bs-example">
+              <div class="row">
+                <div class="col-lg-4">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr>
+                    </thead>
+                    <tbody>
+                      <tr> <td rowspan="2">1</td> <td>Mark</td> <td>Otto</td>       <td class=active>@mdo</td> </tr>
+                      <tr>                        <td>Mark</td> <td>Otto</td>       <td class=success>@TwBootstrap</td> </tr>
+                      <tr> <td>2</td>             <td>Jacob</td> <td>Thornton</td>  <td class=warning>@fat</td> </tr>
+                      <tr> <td>3</td>           <td colspan="2">Larry the Bird</td> <td class=danger>@twitter</td> </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <div class="col-lg-4">
+                  <table class="table table-hover table-striped">
+                    <thead>
+                      <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr>
+                    </thead>
+                    <tbody>
+                      <tr> <td rowspan="2">1</td> <td>Mark</td> <td>Otto</td>       <td>@mdo</td> </tr>
+                      <tr>                        <td>Mark</td> <td>Otto</td>       <td>@TwBootstrap</td> </tr>
+                      <tr> <td>2</td>             <td>Jacob</td> <td>Thornton</td>  <td>@fat</td> </tr>
+                      <tr> <td>3</td>           <td colspan="2">Larry the Bird</td> <td>@twitter</td> </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr>
+                    </tfoot>
+                  </table>
+                </div>
+                <div class="col-lg-4">
+                  <table class="table table-bordered table-hover table-condensed">
+                    <thead>
+                      <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr>
+                    </thead>
+                    <tbody>
+                      <tr> <td rowspan="2">1</td> <td>Mark</td> <td>Otto</td>       <td>@mdo</td> </tr>
+                      <tr>                        <td>Mark</td> <td>Otto</td>       <td>@TwBootstrap</td> </tr>
+                      <tr> <td>2</td>             <td>Jacob</td> <td>Thornton</td>  <td>@fat</td> </tr>
+                      <tr> <td>3</td>           <td colspan="2">Larry the Bird</td> <td>@twitter</td> </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
             </div>
 
             <div class="bs-example table-responsive">
@@ -536,6 +865,74 @@
             <div class="page-header">
               <h1 id="forms">Forms</h1>
             </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Example block-level help text here.</p>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="checkbox-inline">
+                  <input type="checkbox" name="inlineCheckbox" value="option1"> 1
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" name="inlineCheckbox" value="option2"> 2
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" name="inlineCheckbox" value="option3"> 3
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="radio-inline">
+                  <input type="radio" name="inlineRadio" value="option1"> 1
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="inlineRadio" value="option2"> 2
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="inlineRadio" value="option3"> 3
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="control-label">Email</label>
+                <p class="form-control-static">email@example.com</p>
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+          </div>
+          <div class="col-lg-8">
+            <form class="form-inline">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password">
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-default">Sign in</button>
+            </form>
           </div>
         </div>
 
@@ -663,6 +1060,65 @@
                 </div>
               </form>
               
+          </div>
+        </div>
+      </div>
+
+      <!-- Images
+      ================================================== -->
+      <div class="bs-docs-section">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="type">Images</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <img class="img-rounded"    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAADSCAYAAAA/mZ5CAAAFUklEQVR4nO3a21JTaRrH4b7/S1lEGGxQZKPotLaKLd04URiZAkeBQLJyC+8cmISNhI41/y4s+jl4Dlj5atVXxfvL2sBPw+GwgP/PT7e9AbgLhAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECGkmg/ry+6Oaa5pqmrXaO5u+tu3t1bOFppopawdHu/VqY6nmm6aaZr6WNl7X7tHgb7LHu0tIf6pfX7r/rPvN9MGbaHu192xhtO6atWf79XyxufD5yP0X9Z8bBv9u7PFuE9JUg+odvq/XG4tXhmrakLbV23taC1PXtnW0szL57OH2p/q0/XDy88rOcbV3co9/D0Ka5myv1sbDNrcwumWaPqRtb7eeLjTVNHPXD2l7Ut3V8fGl+u3zoAaf39TSeO1qt3rtsPqHb+rB5Crw6+Qq0J5evFI8qDeH/Vvb463/bn5AQppmPKSd1Xq73z0f2OuGtO3V7uZ8NU2n1t7+XqvXrR0c1It/jI8/qm6vrbbXrUfjtYu/1uFgWMPhoD5vr0yiWHy+X6ftSX3YHN+OzdXK9uca3OoeuUpI05zt1y9PXn59yL74zf/NkLZ18mGz5pumOms7ddSbsrb/sZ50zo/vng5reLp7vrbzpD72R2sHR7Wz1hmtXaj1ZyvVGa3rrO3Ul8EPsEcuEdIsbhjS9uRDbc431XTW691RO33t2V6tz105funWbP3yeY+79fjelQf+e4+re9z+MHvknJBmMW3w2pN6/+Tr7dL6u9GD+NQh/d5v+7Z6o6vI+Mr0dLc3/WH/VvbImJBmccM3+NrFK8ZUa7V3clDPb3z+eFEHl54/+vVpa/nCOeZr8/3J94f0l+6RMSHNIjGkp8f1buXqG7Hfpr4R6x9u1fLV89zbqH99763dX7hHzglpFjc+yM+6tq0v2w8mg/vt32iOzq82/cPaWh6f42G96b6cDHNn9Y/zlw23uUcuEdIsIkM6rPb0Y/1y3X8NLD6v/cm6fh2+Xpp8dv/lQfWH/Tp49XNNXn+//e/X19+3tkeuEtIsQkM6HA5rcLxXW4+XRy8R7tXSxqtL/8fWP3x9fiu18Kz+fTq6lesf1Mufx+ddrq3D/q3tkW8JCQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQcD/ALu83ZMaJQfBAAAAAElFTkSuQmCC">
+            <img class="img-circle"     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAADSCAYAAAA/mZ5CAAAFUklEQVR4nO3a21JTaRrH4b7/S1lEGGxQZKPotLaKLd04URiZAkeBQLJyC+8cmISNhI41/y4s+jl4Dlj5atVXxfvL2sBPw+GwgP/PT7e9AbgLhAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECGkmg/ry+6Oaa5pqmrXaO5u+tu3t1bOFppopawdHu/VqY6nmm6aaZr6WNl7X7tHgb7LHu0tIf6pfX7r/rPvN9MGbaHu192xhtO6atWf79XyxufD5yP0X9Z8bBv9u7PFuE9JUg+odvq/XG4tXhmrakLbV23taC1PXtnW0szL57OH2p/q0/XDy88rOcbV3co9/D0Ka5myv1sbDNrcwumWaPqRtb7eeLjTVNHPXD2l7Ut3V8fGl+u3zoAaf39TSeO1qt3rtsPqHb+rB5Crw6+Qq0J5evFI8qDeH/Vvb463/bn5AQppmPKSd1Xq73z0f2OuGtO3V7uZ8NU2n1t7+XqvXrR0c1It/jI8/qm6vrbbXrUfjtYu/1uFgWMPhoD5vr0yiWHy+X6ftSX3YHN+OzdXK9uca3OoeuUpI05zt1y9PXn59yL74zf/NkLZ18mGz5pumOms7ddSbsrb/sZ50zo/vng5reLp7vrbzpD72R2sHR7Wz1hmtXaj1ZyvVGa3rrO3Ul8EPsEcuEdIsbhjS9uRDbc431XTW691RO33t2V6tz105funWbP3yeY+79fjelQf+e4+re9z+MHvknJBmMW3w2pN6/+Tr7dL6u9GD+NQh/d5v+7Z6o6vI+Mr0dLc3/WH/VvbImJBmccM3+NrFK8ZUa7V3clDPb3z+eFEHl54/+vVpa/nCOeZr8/3J94f0l+6RMSHNIjGkp8f1buXqG7Hfpr4R6x9u1fLV89zbqH99763dX7hHzglpFjc+yM+6tq0v2w8mg/vt32iOzq82/cPaWh6f42G96b6cDHNn9Y/zlw23uUcuEdIsIkM6rPb0Y/1y3X8NLD6v/cm6fh2+Xpp8dv/lQfWH/Tp49XNNXn+//e/X19+3tkeuEtIsQkM6HA5rcLxXW4+XRy8R7tXSxqtL/8fWP3x9fiu18Kz+fTq6lesf1Mufx+ddrq3D/q3tkW8JCQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQcD/ALu83ZMaJQfBAAAAAElFTkSuQmCC">
+            <img class="img-thumbnail"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAADSCAYAAAA/mZ5CAAAFUklEQVR4nO3a21JTaRrH4b7/S1lEGGxQZKPotLaKLd04URiZAkeBQLJyC+8cmISNhI41/y4s+jl4Dlj5atVXxfvL2sBPw+GwgP/PT7e9AbgLhAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECGkmg/ry+6Oaa5pqmrXaO5u+tu3t1bOFppopawdHu/VqY6nmm6aaZr6WNl7X7tHgb7LHu0tIf6pfX7r/rPvN9MGbaHu192xhtO6atWf79XyxufD5yP0X9Z8bBv9u7PFuE9JUg+odvq/XG4tXhmrakLbV23taC1PXtnW0szL57OH2p/q0/XDy88rOcbV3co9/D0Ka5myv1sbDNrcwumWaPqRtb7eeLjTVNHPXD2l7Ut3V8fGl+u3zoAaf39TSeO1qt3rtsPqHb+rB5Crw6+Qq0J5evFI8qDeH/Vvb463/bn5AQppmPKSd1Xq73z0f2OuGtO3V7uZ8NU2n1t7+XqvXrR0c1It/jI8/qm6vrbbXrUfjtYu/1uFgWMPhoD5vr0yiWHy+X6ftSX3YHN+OzdXK9uca3OoeuUpI05zt1y9PXn59yL74zf/NkLZ18mGz5pumOms7ddSbsrb/sZ50zo/vng5reLp7vrbzpD72R2sHR7Wz1hmtXaj1ZyvVGa3rrO3Ul8EPsEcuEdIsbhjS9uRDbc431XTW691RO33t2V6tz105funWbP3yeY+79fjelQf+e4+re9z+MHvknJBmMW3w2pN6/+Tr7dL6u9GD+NQh/d5v+7Z6o6vI+Mr0dLc3/WH/VvbImJBmccM3+NrFK8ZUa7V3clDPb3z+eFEHl54/+vVpa/nCOeZr8/3J94f0l+6RMSHNIjGkp8f1buXqG7Hfpr4R6x9u1fLV89zbqH99763dX7hHzglpFjc+yM+6tq0v2w8mg/vt32iOzq82/cPaWh6f42G96b6cDHNn9Y/zlw23uUcuEdIsIkM6rPb0Y/1y3X8NLD6v/cm6fh2+Xpp8dv/lQfWH/Tp49XNNXn+//e/X19+3tkeuEtIsQkM6HA5rcLxXW4+XRy8R7tXSxqtL/8fWP3x9fiu18Kz+fTq6lesf1Mufx+ddrq3D/q3tkW8JCQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQYCQIEBIECAkCBASBAgJAoQEAUKCACFBgJAgQEgQICQIEBIECAkChAQBQoIAIUGAkCBASBAgJAgQEgQICQKEBAFCggAhQcD/ALu83ZMaJQfBAAAAAElFTkSuQmCC">
+          </div>
+        </div>
+      </div>
+
+      <!-- Thumbnails
+      ================================================== -->
+      <div class="bs-docs-section">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="type">Thumbnails</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="thumbnail">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYcAAAEECAYAAADDOvgIAAAJi0lEQVR4nO3d2VZT2RaA4fP+jxIIEQgqXdGoFEhjoUhJZ5A+2dl5hXkuJA1MmioaOZ7xXXw3bhZmjeFY/87ajf/pdDoBAIP+89IfAID/PeIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDgAk4gBAIg4AJOIAQCIOACTiAEAiDjyDdpztb8by/NsYGxmKSqUSleFaTMy8j43d0yjuGlucxM76YkzXazFUqUSlMhy1+nS8W9+J0+IZxj1Q+/wgPq/Mx+R49++rxHCtHpPzK7HVuIjyN58fiANPq2zGwcqb3oKZDcXr5b24KPPY8mIvliduG1eJodcrsd8sn2zcw5Rxsb8Sb4Zu//sqlWpMrzeiVf6O84OfxIEn1dxbjNqti2bXcMxsnV09uy7PY3uues+4SlTn/o7z8gnGPVB5thUzw/fNrxKVSi0Wdga+Qfwm84MuceDplOexNTXUX7TGF2Nz/ySaRTtapwfx19yr/rH6Why1+2PbR6sxPrCwzm7sxUmziKJ5EnvrszHSOzYeq0ftR497mHb8WBnrz2HodSxtNeK01Y6y3YyT/c1YHB9YtN9sxmn5O80P+sSBp9M+iS8f/oip12NRq07E2rXFqjz/Em97C+ts7La6x9pxtDreW1RHFnajOfh7y2bszI/0jo+vHkX7EeOKw49R7y3ga/Hjpj374jBWX3cX3np8PCyi0z6O9Xp/e2z6+refTifaPz7GWPd3D8/FXuvXz+/F/x3wf0Ec+GWunAXX3sVBd1Euz2Nrsr9fP7/XSmOL/YWodsdOfv25hfLQcZ0iGiv13qI6+n736jWQ8jz+Xqj1jtc/Hv68iN4+io35yZgYexXV6mR8Obthn7+5HVPXA/jL5wePJw48szLarbM4/LYe82P9LZfa+/1odX+mfRh/jnaPTcTGyQ0XZU8+xUR3ERxdjsP2I8Z1OtEpGrFS7y+8M59PL8+6i/ixPnBBvb4Sh//ibqDWwbv+NZfx1Z9bZy8xP3gkceAZFbG/cMPF1PGl2LsYWOiKvZirdo9PxteLG87IL77GZHd8dT72i0eMuzxWNFYG9vMnYrXRjPNvi/Gq92f1WGkU/3y+xWGsDtxVNLby42dwXmh+8BjiwPMpz+Lzm+t31ozFu69HV2/zbO3ETO/W0On41rzhdzW/xXRvu2YmdlqPGNc7XkRjub+nX6mOx+jAZ62vNO5+JmNQcRSbs/39/8rwbHztbju92Pzg4cSB51M04sOr63G43Faa3Yyj7lnuSy6exfdYHr/hM9ZXovEPz8LLViPWpwa/IVVjduu0f7FaHPgNiQPPp2zFyfFZNIvL6w7bH2N6ZODMfHVg26X37MBkbF/k31Xetu3ykHHXfqZ1sHTlG0OlMhpL3//ZdlJ5vhNLVx5QG47JtWsPwL3w/OAhxIFfqvg+sBCP/nl54bURSwMXXj/deOF144YLtg8cd+Vn2nG88SZ9c5johusO7ZOtWBi9GpX5z0d5K+pF5wcPIw48nfZxfFmai+k341GrvY2/Tu+71XPm8lbPs/jytrsIjsTCfj5rb+3N33Cr5wPHDRwvTzdj6sZXYbyNT8e3P1TWPtmKudrAz1enYu3glncqveD84KHEgadz5SGxStTX8tl3a3/gVs/a+/hedKLTacfh8mhv3MjCbjSvLHLN2F24+SGxh427VJ7F1uxwf4EfnYzX1f7nH57+3HvCeVB5sRPvB78xjC3G9uldTye/0PzgEcSBJ9SO4/WJgbPvVzG3sRcnzXaUxVkcbq/E1MDiO7Kw13vit2gM7vt3XxPRjnbzJPY2/hh4X9PV10Q8dFynU8bF3/P9108MTcan4yKaB38O3N5ajT+2z6+9A+ostmYHLj4Pz8TnO8PwUvODxxEHnlTZ3Iv3t9yhdMXwdHwe3HYqT+PL9PC946pz29deTPewcWVzNxZ720IjMb/dfRVGO47/morh3rebhdgZeL7gyjefe0337x76xfODxxIHnlxxtBmztTsWs5HpWPveTPvz972aujLx59WH5x48rhUHH/rbNWNL+1e3a8qL2HnXf0ng6Ifu09zN+DZ7/0J9Yxx+6fzg8cSBZ1E2D+Pryny8HatevopiKEbGJ2Ph49c4vOv/Hmifxu7G+5iu1y7P3odiZHwqFtd24uSu2zT/xbiisdzbOhp6s37ri/fWei/eG4vlRhGd4iDe3RW9e+Lwq+YHT0EcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABI/guS8vnpJdkQCAAAAABJRU5ErkJggg==">
+              <div class="caption">
+                <h3>Thumbnail label</h3>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <a class="thumbnail">
+              <img src="data:image/png;base64,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UvODxxEHnlTZ3Iv3t9yhdMXwdHwe3HYqT+PL9PC946pz29deTPewcWVzNxZ720IjMb/dfRVGO47/morh3rebhdgZeL7gyjefe0337x76xfODxxIHnlxxtBmztTsWs5HpWPveTPvz972aujLx59WH5x48rhUHH/rbNWNL+1e3a8qL2HnXf0ng6Ifu09zN+DZ7/0J9Yxx+6fzg8cSBZ1E2D+Pryny8HatevopiKEbGJ2Ph49c4vOv/Hmifxu7G+5iu1y7P3odiZHwqFtd24uSu2zT/xbiisdzbOhp6s37ri/fWei/eG4vlRhGd4iDe3RW9e+Lwq+YHT0EcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABI/guS8vnpJdkQCAAAAABJRU5ErkJggg==">
+              <div class="caption">
+                <h3>Thumbnail label</h3>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a class="thumbnail">
+              <img src="data:image/png;base64,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UvODxxEHnlTZ3Iv3t9yhdMXwdHwe3HYqT+PL9PC946pz29deTPewcWVzNxZ720IjMb/dfRVGO47/morh3rebhdgZeL7gyjefe0337x76xfODxxIHnlxxtBmztTsWs5HpWPveTPvz972aujLx59WH5x48rhUHH/rbNWNL+1e3a8qL2HnXf0ng6Ifu09zN+DZ7/0J9Yxx+6fzg8cSBZ1E2D+Pryny8HatevopiKEbGJ2Ph49c4vOv/Hmifxu7G+5iu1y7P3odiZHwqFtd24uSu2zT/xbiisdzbOhp6s37ri/fWei/eG4vlRhGd4iDe3RW9e+Lwq+YHT0EcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABIxAGARBwASMQBgEQcAEjEAYBEHABI/guS8vnpJdkQCAAAAABJRU5ErkJggg==">
+            </a>
           </div>
         </div>
       </div>
@@ -1061,6 +1517,9 @@
               </div>
             </div>
             <div class="panel panel-default">
+              <div class="panel-heading">
+                <h1 class="panel-title">Panel title</h1>
+              </div>
               <div class="panel-body">
                 Panel content
               </div>
@@ -1101,6 +1560,7 @@
               <div class="panel-body">
                 Panel content
               </div>
+              <div class="panel-footer">Panel footer</div>
             </div>
             <div class="panel panel-info">
               <div class="panel-heading">
@@ -1109,6 +1569,7 @@
               <div class="panel-body">
                 Panel content
               </div>
+              <div class="panel-footer">Panel footer</div>
             </div>
           </div>
         </div>
@@ -1135,6 +1596,104 @@
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Media</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="bs-example">
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAYAAADjsjsAAAAC90lEQVR4nO3W21LiUBCFYd//UToJAUTlICiMMkqpAwgoIgcPJISw8wprLoIOKo5lVcSumXXxX7GLpr9KQraiKAJLpq3v/gH/UsQkps6ISUydEZOYOiMmMXVGTGLqjJjE1BkxiakzYhJTZ8Qkps6ISUydEZOYOiMmMXVGTGLqjJjE1BkxiakzYhJTZ8ljhg/onVaw41oQEYidQeGojbtw/XkzbaFoCURK6M8Vz9o45uIev4p2vNirMvURwtfnzRTt0tP5Ty64yVmbxzTwOkVYIrALp7i+nyEMZ7jrVJG2LLh7DUwWL89PL0uwnxE+s+AmZ30HpvHRKQhEcjh7WHx43niX2LcFIs6bBcPxKbZFIG4V/ZmJz8+ucZiKv78xeUxslk7McIQjVyBOGRfNE1R2UhCxkcnX0BwFMC/gPXTKNkQcVFotFN8sOMewnolv2eMh5maGfs2FiCDXmCBMdJZGzPkNKvbb51dcDifD+fKsgdctwxGBU+nCC/oorVnQBAMcpQUi2zg+ryItAsk1MAmTn6USs2zFC2Vrl5j4Ieb+GO1qfIVJvoWpiWC8LipOfFV1PINo/t6CBrN+De4KUmMSftEsbZjhELWUQCSPjm/+XGFeG3siEPsAg8BH78CBiI39jhffjn9bMBzhOL3EzDZwt/jCWaowzRStXYHILprTlQX9DgpPC/pPy7zX6pIGj80CrOfPLBRb0xgl8VnaMKMFHi92ICJwSmcYPAYIgwdc1XPLW6+98sz6eEHjd1F2BCIu9muF+LXGqaDnm8RnKcSMEAW3qG+v++FZ1J//FF617tYzAW6W/95u9RqzhYduJX6tcX8MEJgEZ6nFjCKY2S0uqnmkrfjWTO9VcX7rv3xd+WDBcPwTWRFI6hBXy2ei8Xs4cGKsk3GY2CzVmP9zxCSmzohJTJ0Rk5g6IyYxdUZMYuqMmMTUGTGJqTNiElNnxCSmzohJTJ0Rk5g6IyYxdUZMYuqMmMTUGTGJqTNiElNnxCSmzohJTJ39BvXtGI/+A8e9AAAAAElFTkSuQmCC">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">Media heading</h4>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </div>
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAYAAADjsjsAAAAC90lEQVR4nO3W21LiUBCFYd//UToJAUTlICiMMkqpAwgoIgcPJISw8wprLoIOKo5lVcSumXXxX7GLpr9KQraiKAJLpq3v/gH/UsQkps6ISUydEZOYOiMmMXVGTGLqjJjE1BkxiakzYhJTZ8Qkps6ISUydEZOYOiMmMXVGTGLqjJjE1BkxiakzYhJTZ8ljhg/onVaw41oQEYidQeGojbtw/XkzbaFoCURK6M8Vz9o45uIev4p2vNirMvURwtfnzRTt0tP5Ty64yVmbxzTwOkVYIrALp7i+nyEMZ7jrVJG2LLh7DUwWL89PL0uwnxE+s+AmZ30HpvHRKQhEcjh7WHx43niX2LcFIs6bBcPxKbZFIG4V/ZmJz8+ucZiKv78xeUxslk7McIQjVyBOGRfNE1R2UhCxkcnX0BwFMC/gPXTKNkQcVFotFN8sOMewnolv2eMh5maGfs2FiCDXmCBMdJZGzPkNKvbb51dcDifD+fKsgdctwxGBU+nCC/oorVnQBAMcpQUi2zg+ryItAsk1MAmTn6USs2zFC2Vrl5j4Ieb+GO1qfIVJvoWpiWC8LipOfFV1PINo/t6CBrN+De4KUmMSftEsbZjhELWUQCSPjm/+XGFeG3siEPsAg8BH78CBiI39jhffjn9bMBzhOL3EzDZwt/jCWaowzRStXYHILprTlQX9DgpPC/pPy7zX6pIGj80CrOfPLBRb0xgl8VnaMKMFHi92ICJwSmcYPAYIgwdc1XPLW6+98sz6eEHjd1F2BCIu9muF+LXGqaDnm8RnKcSMEAW3qG+v++FZ1J//FF617tYzAW6W/95u9RqzhYduJX6tcX8MEJgEZ6nFjCKY2S0uqnmkrfjWTO9VcX7rv3xd+WDBcPwTWRFI6hBXy2ei8Xs4cGKsk3GY2CzVmP9zxCSmzohJTJ0Rk5g6IyYxdUZMYuqMmMTUGTGJqTNiElNnxCSmzohJTJ0Rk5g6IyYxdUZMYuqMmMTUGTGJqTNiElNnxCSmzohJTJ39BvXtGI/+A8e9AAAAAElFTkSuQmCC">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">Media heading</h4>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                  <div class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAYAAADjsjsAAAAC90lEQVR4nO3W21LiUBCFYd//UToJAUTlICiMMkqpAwgoIgcPJISw8wprLoIOKo5lVcSumXXxX7GLpr9KQraiKAJLpq3v/gH/UsQkps6ISUydEZOYOiMmMXVGTGLqjJjE1BkxiakzYhJTZ8Qkps6ISUydEZOYOiMmMXVGTGLqjJjE1BkxiakzYhJTZ8ljhg/onVaw41oQEYidQeGojbtw/XkzbaFoCURK6M8Vz9o45uIev4p2vNirMvURwtfnzRTt0tP5Ty64yVmbxzTwOkVYIrALp7i+nyEMZ7jrVJG2LLh7DUwWL89PL0uwnxE+s+AmZ30HpvHRKQhEcjh7WHx43niX2LcFIs6bBcPxKbZFIG4V/ZmJz8+ucZiKv78xeUxslk7McIQjVyBOGRfNE1R2UhCxkcnX0BwFMC/gPXTKNkQcVFotFN8sOMewnolv2eMh5maGfs2FiCDXmCBMdJZGzPkNKvbb51dcDifD+fKsgdctwxGBU+nCC/oorVnQBAMcpQUi2zg+ryItAsk1MAmTn6USs2zFC2Vrl5j4Ieb+GO1qfIVJvoWpiWC8LipOfFV1PINo/t6CBrN+De4KUmMSftEsbZjhELWUQCSPjm/+XGFeG3siEPsAg8BH78CBiI39jhffjn9bMBzhOL3EzDZwt/jCWaowzRStXYHILprTlQX9DgpPC/pPy7zX6pIGj80CrOfPLBRb0xgl8VnaMKMFHi92ICJwSmcYPAYIgwdc1XPLW6+98sz6eEHjd1F2BCIu9muF+LXGqaDnm8RnKcSMEAW3qG+v++FZ1J//FF617tYzAW6W/95u9RqzhYduJX6tcX8MEJgEZ6nFjCKY2S0uqnmkrfjWTO9VcX7rv3xd+WDBcPwTWRFI6hBXy2ei8Xs4cGKsk3GY2CzVmP9zxCSmzohJTJ0Rk5g6IyYxdUZMYuqMmMTUGTGJqTNiElNnxCSmzohJTJ0Rk5g6IyYxdUZMYuqMmMTUGTGJqTNiElNnxCSmzohJTJ39BvXtGI/+A8e9AAAAAElFTkSuQmCC">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Nested media heading</h4>
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.bs-example -->
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="bs-example">
+              <ul class="media-list">
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAYAAADjsjsAAAAC90lEQVR4nO3W21LiUBCFYd//UToJAUTlICiMMkqpAwgoIgcPJISw8wprLoIOKo5lVcSumXXxX7GLpr9KQraiKAJLpq3v/gH/UsQkps6ISUydEZOYOiMmMXVGTGLqjJjE1BkxiakzYhJTZ8Qkps6ISUydEZOYOiMmMXVGTGLqjJjE1BkxiakzYhJTZ8ljhg/onVaw41oQEYidQeGojbtw/XkzbaFoCURK6M8Vz9o45uIev4p2vNirMvURwtfnzRTt0tP5Ty64yVmbxzTwOkVYIrALp7i+nyEMZ7jrVJG2LLh7DUwWL89PL0uwnxE+s+AmZ30HpvHRKQhEcjh7WHx43niX2LcFIs6bBcPxKbZFIG4V/ZmJz8+ucZiKv78xeUxslk7McIQjVyBOGRfNE1R2UhCxkcnX0BwFMC/gPXTKNkQcVFotFN8sOMewnolv2eMh5maGfs2FiCDXmCBMdJZGzPkNKvbb51dcDifD+fKsgdctwxGBU+nCC/oorVnQBAMcpQUi2zg+ryItAsk1MAmTn6USs2zFC2Vrl5j4Ieb+GO1qfIVJvoWpiWC8LipOfFV1PINo/t6CBrN+De4KUmMSftEsbZjhELWUQCSPjm/+XGFeG3siEPsAg8BH78CBiI39jhffjn9bMBzhOL3EzDZwt/jCWaowzRStXYHILprTlQX9DgpPC/pPy7zX6pIGj80CrOfPLBRb0xgl8VnaMKMFHi92ICJwSmcYPAYIgwdc1XPLW6+98sz6eEHjd1F2BCIu9muF+LXGqaDnm8RnKcSMEAW3qG+v++FZ1J//FF617tYzAW6W/95u9RqzhYduJX6tcX8MEJgEZ6nFjCKY2S0uqnmkrfjWTO9VcX7rv3xd+WDBcPwTWRFI6hBXy2ei8Xs4cGKsk3GY2CzVmP9zxCSmzohJTJ0Rk5g6IyYxdUZMYuqMmMTUGTGJqTNiElNnxCSmzohJTJ0Rk5g6IyYxdUZMYuqMmMTUGTGJqTNiElNnxCSmzohJTJ39BvXtGI/+A8e9AAAAAElFTkSuQmCC">
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading">Media heading</h4>
+                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+                    <!-- Nested media object -->
+                    <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAYAAADjsjsAAAAC90lEQVR4nO3W21LiUBCFYd//UToJAUTlICiMMkqpAwgoIgcPJISw8wprLoIOKo5lVcSumXXxX7GLpr9KQraiKAJLpq3v/gH/UsQkps6ISUydEZOYOiMmMXVGTGLqjJjE1BkxiakzYhJTZ8Qkps6ISUydEZOYOiMmMXVGTGLqjJjE1BkxiakzYhJTZ8ljhg/onVaw41oQEYidQeGojbtw/XkzbaFoCURK6M8Vz9o45uIev4p2vNirMvURwtfnzRTt0tP5Ty64yVmbxzTwOkVYIrALp7i+nyEMZ7jrVJG2LLh7DUwWL89PL0uwnxE+s+AmZ30HpvHRKQhEcjh7WHx43niX2LcFIs6bBcPxKbZFIG4V/ZmJz8+ucZiKv78xeUxslk7McIQjVyBOGRfNE1R2UhCxkcnX0BwFMC/gPXTKNkQcVFotFN8sOMewnolv2eMh5maGfs2FiCDXmCBMdJZGzPkNKvbb51dcDifD+fKsgdctwxGBU+nCC/oorVnQBAMcpQUi2zg+ryItAsk1MAmTn6USs2zFC2Vrl5j4Ieb+GO1qfIVJvoWpiWC8LipOfFV1PINo/t6CBrN+De4KUmMSftEsbZjhELWUQCSPjm/+XGFeG3siEPsAg8BH78CBiI39jhffjn9bMBzhOL3EzDZwt/jCWaowzRStXYHILprTlQX9DgpPC/pPy7zX6pIGj80CrOfPLBRb0xgl8VnaMKMFHi92ICJwSmcYPAYIgwdc1XPLW6+98sz6eEHjd1F2BCIu9muF+LXGqaDnm8RnKcSMEAW3qG+v++FZ1J//FF617tYzAW6W/95u9RqzhYduJX6tcX8MEJgEZ6nFjCKY2S0uqnmkrfjWTO9VcX7rv3xd+WDBcPwTWRFI6hBXy2ei8Xs4cGKsk3GY2CzVmP9zxCSmzohJTJ0Rk5g6IyYxdUZMYuqMmMTUGTGJqTNiElNnxCSmzohJTJ0Rk5g6IyYxdUZMYuqMmMTUGTGJqTNiElNnxCSmzohJTJ39BvXtGI/+A8e9AAAAAElFTkSuQmCC">
+                      </a>
+                      <div class="media-body">
+                        <h4 class="media-heading">Nested media heading</h4>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                        <!-- Nested media object -->
+                        <div class="media">
+                          <a class="pull-left" href="#">
+                            <img class="media-object" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAYAAADjsjsAAAAC90lEQVR4nO3W21LiUBCFYd//UToJAUTlICiMMkqpAwgoIgcPJISw8wprLoIOKo5lVcSumXXxX7GLpr9KQraiKAJLpq3v/gH/UsQkps6ISUydEZOYOiMmMXVGTGLqjJjE1BkxiakzYhJTZ8Qkps6ISUydEZOYOiMmMXVGTGLqjJjE1BkxiakzYhJTZ8ljhg/onVaw41oQEYidQeGojbtw/XkzbaFoCURK6M8Vz9o45uIev4p2vNirMvURwtfnzRTt0tP5Ty64yVmbxzTwOkVYIrALp7i+nyEMZ7jrVJG2LLh7DUwWL89PL0uwnxE+s+AmZ30HpvHRKQhEcjh7WHx43niX2LcFIs6bBcPxKbZFIG4V/ZmJz8+ucZiKv78xeUxslk7McIQjVyBOGRfNE1R2UhCxkcnX0BwFMC/gPXTKNkQcVFotFN8sOMewnolv2eMh5maGfs2FiCDXmCBMdJZGzPkNKvbb51dcDifD+fKsgdctwxGBU+nCC/oorVnQBAMcpQUi2zg+ryItAsk1MAmTn6USs2zFC2Vrl5j4Ieb+GO1qfIVJvoWpiWC8LipOfFV1PINo/t6CBrN+De4KUmMSftEsbZjhELWUQCSPjm/+XGFeG3siEPsAg8BH78CBiI39jhffjn9bMBzhOL3EzDZwt/jCWaowzRStXYHILprTlQX9DgpPC/pPy7zX6pIGj80CrOfPLBRb0xgl8VnaMKMFHi92ICJwSmcYPAYIgwdc1XPLW6+98sz6eEHjd1F2BCIu9muF+LXGqaDnm8RnKcSMEAW3qG+v++FZ1J//FF617tYzAW6W/95u9RqzhYduJX6tcX8MEJgEZ6nFjCKY2S0uqnmkrfjWTO9VcX7rv3xd+WDBcPwTWRFI6hBXy2ei8Xs4cGKsk3GY2CzVmP9zxCSmzohJTJ0Rk5g6IyYxdUZMYuqMmMTUGTGJqTNiElNnxCSmzohJTJ0Rk5g6IyYxdUZMYuqMmMTUGTGJqTNiElNnxCSmzohJTJ39BvXtGI/+A8e9AAAAAElFTkSuQmCC">
+                          </a>
+                          <div class="media-body">
+                            <h4 class="media-heading">Nested media heading</h4>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Nested media object -->
+                    <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAYAAADjsjsAAAAC90lEQVR4nO3W21LiUBCFYd//UToJAUTlICiMMkqpAwgoIgcPJISw8wprLoIOKo5lVcSumXXxX7GLpr9KQraiKAJLpq3v/gH/UsQkps6ISUydEZOYOiMmMXVGTGLqjJjE1BkxiakzYhJTZ8Qkps6ISUydEZOYOiMmMXVGTGLqjJjE1BkxiakzYhJTZ8ljhg/onVaw41oQEYidQeGojbtw/XkzbaFoCURK6M8Vz9o45uIev4p2vNirMvURwtfnzRTt0tP5Ty64yVmbxzTwOkVYIrALp7i+nyEMZ7jrVJG2LLh7DUwWL89PL0uwnxE+s+AmZ30HpvHRKQhEcjh7WHx43niX2LcFIs6bBcPxKbZFIG4V/ZmJz8+ucZiKv78xeUxslk7McIQjVyBOGRfNE1R2UhCxkcnX0BwFMC/gPXTKNkQcVFotFN8sOMewnolv2eMh5maGfs2FiCDXmCBMdJZGzPkNKvbb51dcDifD+fKsgdctwxGBU+nCC/oorVnQBAMcpQUi2zg+ryItAsk1MAmTn6USs2zFC2Vrl5j4Ieb+GO1qfIVJvoWpiWC8LipOfFV1PINo/t6CBrN+De4KUmMSftEsbZjhELWUQCSPjm/+XGFeG3siEPsAg8BH78CBiI39jhffjn9bMBzhOL3EzDZwt/jCWaowzRStXYHILprTlQX9DgpPC/pPy7zX6pIGj80CrOfPLBRb0xgl8VnaMKMFHi92ICJwSmcYPAYIgwdc1XPLW6+98sz6eEHjd1F2BCIu9muF+LXGqaDnm8RnKcSMEAW3qG+v++FZ1J//FF617tYzAW6W/95u9RqzhYduJX6tcX8MEJgEZ6nFjCKY2S0uqnmkrfjWTO9VcX7rv3xd+WDBcPwTWRFI6hBXy2ei8Xs4cGKsk3GY2CzVmP9zxCSmzohJTJ0Rk5g6IyYxdUZMYuqMmMTUGTGJqTNiElNnxCSmzohJTJ0Rk5g6IyYxdUZMYuqMmMTUGTGJqTNiElNnxCSmzohJTJ39BvXtGI/+A8e9AAAAAElFTkSuQmCC">
+                      </a>
+                      <div class="media-body">
+                        <h4 class="media-heading">Nested media heading</h4>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="media">
+                  <a class="pull-right" href="#">
+                    <img class="media-object" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAYAAADjsjsAAAAC90lEQVR4nO3W21LiUBCFYd//UToJAUTlICiMMkqpAwgoIgcPJISw8wprLoIOKo5lVcSumXXxX7GLpr9KQraiKAJLpq3v/gH/UsQkps6ISUydEZOYOiMmMXVGTGLqjJjE1BkxiakzYhJTZ8Qkps6ISUydEZOYOiMmMXVGTGLqjJjE1BkxiakzYhJTZ8ljhg/onVaw41oQEYidQeGojbtw/XkzbaFoCURK6M8Vz9o45uIev4p2vNirMvURwtfnzRTt0tP5Ty64yVmbxzTwOkVYIrALp7i+nyEMZ7jrVJG2LLh7DUwWL89PL0uwnxE+s+AmZ30HpvHRKQhEcjh7WHx43niX2LcFIs6bBcPxKbZFIG4V/ZmJz8+ucZiKv78xeUxslk7McIQjVyBOGRfNE1R2UhCxkcnX0BwFMC/gPXTKNkQcVFotFN8sOMewnolv2eMh5maGfs2FiCDXmCBMdJZGzPkNKvbb51dcDifD+fKsgdctwxGBU+nCC/oorVnQBAMcpQUi2zg+ryItAsk1MAmTn6USs2zFC2Vrl5j4Ieb+GO1qfIVJvoWpiWC8LipOfFV1PINo/t6CBrN+De4KUmMSftEsbZjhELWUQCSPjm/+XGFeG3siEPsAg8BH78CBiI39jhffjn9bMBzhOL3EzDZwt/jCWaowzRStXYHILprTlQX9DgpPC/pPy7zX6pIGj80CrOfPLBRb0xgl8VnaMKMFHi92ICJwSmcYPAYIgwdc1XPLW6+98sz6eEHjd1F2BCIu9muF+LXGqaDnm8RnKcSMEAW3qG+v++FZ1J//FF617tYzAW6W/95u9RqzhYduJX6tcX8MEJgEZ6nFjCKY2S0uqnmkrfjWTO9VcX7rv3xd+WDBcPwTWRFI6hBXy2ei8Xs4cGKsk3GY2CzVmP9zxCSmzohJTJ0Rk5g6IyYxdUZMYuqMmMTUGTGJqTNiElNnxCSmzohJTJ0Rk5g6IyYxdUZMYuqMmMTUGTGJqTNiElNnxCSmzohJTJ39BvXtGI/+A8e9AAAAAElFTkSuQmCC">
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading">Media heading</h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
       </div>
 
 
