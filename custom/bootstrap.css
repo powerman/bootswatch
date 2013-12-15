@@ -7727,6 +7727,78 @@ td.visible-print {
   font-size: 75%;
 }
 
+.table.table-striped > thead > tr > .active,
+.table.table-striped > tbody > tr > .active,
+.table.table-striped > tfoot > tr > .active,
+.table.table-striped > thead > .active > td,
+.table.table-striped > tbody > .active > td,
+.table.table-striped > tfoot > .active > td,
+.table.table-striped > thead > .active > th,
+.table.table-striped > tbody > .active > th,
+.table.table-striped > tfoot > .active > th {
+  background-color: #f5f5f5;
+}
+
+.table-hover.table-striped > tbody > tr > .active:hover,
+.table-hover.table-striped > tbody > .active:hover > td,
+.table-hover.table-striped > tbody > .active:hover > th {
+  background-color: #e8e8e8;
+}
+
+.table.table-striped > thead > tr > .success,
+.table.table-striped > tbody > tr > .success,
+.table.table-striped > tfoot > tr > .success,
+.table.table-striped > thead > .success > td,
+.table.table-striped > tbody > .success > td,
+.table.table-striped > tfoot > .success > td,
+.table.table-striped > thead > .success > th,
+.table.table-striped > tbody > .success > th,
+.table.table-striped > tfoot > .success > th {
+  background-color: #dff0d8;
+}
+
+.table-hover.table-striped > tbody > tr > .success:hover,
+.table-hover.table-striped > tbody > .success:hover > td,
+.table-hover.table-striped > tbody > .success:hover > th {
+  background-color: #d0e9c6;
+}
+
+.table.table-striped > thead > tr > .danger,
+.table.table-striped > tbody > tr > .danger,
+.table.table-striped > tfoot > tr > .danger,
+.table.table-striped > thead > .danger > td,
+.table.table-striped > tbody > .danger > td,
+.table.table-striped > tfoot > .danger > td,
+.table.table-striped > thead > .danger > th,
+.table.table-striped > tbody > .danger > th,
+.table.table-striped > tfoot > .danger > th {
+  background-color: #f2dede;
+}
+
+.table-hover.table-striped > tbody > tr > .danger:hover,
+.table-hover.table-striped > tbody > .danger:hover > td,
+.table-hover.table-striped > tbody > .danger:hover > th {
+  background-color: #ebcccc;
+}
+
+.table.table-striped > thead > tr > .warning,
+.table.table-striped > tbody > tr > .warning,
+.table.table-striped > tfoot > tr > .warning,
+.table.table-striped > thead > .warning > td,
+.table.table-striped > tbody > .warning > td,
+.table.table-striped > tfoot > .warning > td,
+.table.table-striped > thead > .warning > th,
+.table.table-striped > tbody > .warning > th,
+.table.table-striped > tfoot > .warning > th {
+  background-color: #fcf8e3;
+}
+
+.table-hover.table-striped > tbody > tr > .warning:hover,
+.table-hover.table-striped > tbody > .warning:hover > td,
+.table-hover.table-striped > tbody > .warning:hover > th {
+  background-color: #faf2cc;
+}
+
 .pagination .active > a,
 .pagination .active > a:hover {
   border-color: #ddd;
