@@ -2388,7 +2388,7 @@ textarea.input-lg {
 
 .btn:hover,
 .btn:focus {
-  color: #ffffff;
+  color: #2d2d2d;
   text-decoration: none;
 }
 
@@ -2412,9 +2412,9 @@ fieldset[disabled] .btn {
 }
 
 .btn-default {
-  color: #ffffff;
-  background-color: #474949;
-  border-color: #474949;
+  color: #2d2d2d;
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
 }
 
 .btn-default:hover,
@@ -2422,9 +2422,9 @@ fieldset[disabled] .btn {
 .btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
-  color: #ffffff;
-  background-color: #333434;
-  border-color: #292a2a;
+  color: #2d2d2d;
+  background-color: #d1d1d1;
+  border-color: #c6c6c6;
 }
 
 .btn-default:active,
@@ -2448,12 +2448,12 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-  background-color: #474949;
-  border-color: #474949;
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
 }
 
 .btn-default .badge {
-  color: #474949;
+  color: #e5e5e5;
   background-color: #fff;
 }
 
@@ -7551,17 +7551,21 @@ td.visible-print {
   text-shadow: none;
 }
 
-.btn {
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
 }
 
 .btn-default,
 .btn-default:hover {
-  background-image: -webkit-linear-gradient(#6d7070, #474949 50%, #3d3f3f);
-  background-image: linear-gradient(#6d7070, #474949 50%, #3d3f3f);
+  background-image: -webkit-linear-gradient(#ffffff, #e5e5e5 50%, #dbdbdb);
+  background-image: linear-gradient(#ffffff, #e5e5e5 50%, #dbdbdb);
   background-repeat: no-repeat;
-  border: 1px solid #2e2f2f;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6d7070', endColorstr='#ff3d3f3f', GradientType=0);
+  border: 1px solid #cccccc;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffdbdbdb', GradientType=0);
   filter: none;
 }
 
