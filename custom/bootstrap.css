@@ -7804,6 +7804,10 @@ td.visible-print {
   border-color: #ddd;
 }
 
+.nav-tabs a:focus {
+  outline: none;
+}
+
 .panel-primary .panel-title {
   color: #fff;
 }
