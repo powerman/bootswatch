@@ -10,6 +10,19 @@
 	border: 1px solid darken(@color, 10%);
 }
 
+.btn-states(@color) {
+	.btn-shadow(@color);
+	&:focus,
+	&:hover {
+		outline: none;
+		.btn-shadow(darken(@color, 7%));
+	}
+	&:active,
+	&.active {
+    	    	background-image: none;
+	}
+}
+
 // Navbar =====================================================================
 
 .navbar {
@@ -54,34 +67,28 @@
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
 }
 
-.btn-default,
-.btn-default:hover {
-	.btn-shadow(@btn-default-bg);
+.btn-default {
+	.btn-states(@btn-default-bg);
 }
 
-.btn-primary,
-.btn-primary:hover {
-	.btn-shadow(@btn-primary-bg);
+.btn-primary {
+	.btn-states(@btn-primary-bg);
 }
 
-.btn-success,
-.btn-success:hover {
-	.btn-shadow(@btn-success-bg);
+.btn-success {
+	.btn-states(@btn-success-bg);
 }
 
-.btn-info,
-.btn-info:hover {
-	.btn-shadow(@btn-info-bg);
+.btn-info {
+	.btn-states(@btn-info-bg);
 }
 
-.btn-warning,
-.btn-warning:hover {
-	.btn-shadow(@btn-warning-bg);
+.btn-warning {
+	.btn-states(@btn-warning-bg);
 }
 
-.btn-danger,
-.btn-danger:hover {
-	.btn-shadow(@btn-danger-bg);
+.btn-danger {
+	.btn-states(@btn-danger-bg);
 }
 
 // Typography =================================================================
