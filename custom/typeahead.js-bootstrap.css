@@ -1,0 +1,40 @@
+.tt-dropdown-menu {
+  min-width: 160px;
+  margin-top: 2px;
+  padding: 5px 0;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.tt-suggestion {
+  display: block;
+  padding: 3px 20px;
+}
+.tt-suggestion.tt-is-under-cursor {
+  color: #ffffff;
+  background-image: -webkit-linear-gradient(top, #485176 0%, #3e4666 100%);
+  background-image: linear-gradient(to bottom, #485176 0%, #3e4666 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff485176', endColorstr='#ff3e4666', GradientType=0);
+}
+.tt-suggestion.tt-is-under-cursor a {
+  color: #ffffff;
+}
+.tt-suggestion p {
+  margin: 0;
+}
+.tt-hint {
+  padding: 8px 12px;
+  border: 1px solid #cccccc;
+}
