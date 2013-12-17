@@ -302,7 +302,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #666666;
+  color: #333333;
   background-color: #ffffff;
 }
 
@@ -1944,7 +1944,7 @@ legend {
   margin-bottom: 20px;
   font-size: 21px;
   line-height: inherit;
-  color: #666666;
+  color: #333333;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -2003,7 +2003,7 @@ output {
   padding-top: 9px;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #666666;
+  color: #333333;
   vertical-align: middle;
 }
 
@@ -2014,7 +2014,7 @@ output {
   padding: 8px 12px;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #666666;
+  color: #333333;
   vertical-align: middle;
   background-color: #ffffff;
   background-image: none;
@@ -2250,7 +2250,7 @@ textarea.input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #a6a6a6;
+  color: #737373;
 }
 
 @media (min-width: 768px) {
@@ -4161,7 +4161,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
-  color: #666666;
+  color: #333333;
   text-align: center;
   background-color: #eeeeee;
   border: 1px solid #cccccc;
@@ -5612,7 +5612,7 @@ a.thumbnail.active {
 
 .thumbnail .caption {
   padding: 9px;
-  color: #666666;
+  color: #333333;
 }
 
 .alert {
