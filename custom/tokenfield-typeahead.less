@@ -5,6 +5,7 @@
 .twitter-typeahead {
   width: 100%;
   position: relative;
+  vertical-align: top;
 }
 .twitter-typeahead .tt-query,
 .twitter-typeahead .tt-hint {
@@ -73,18 +74,18 @@
 }
 .twitter-typeahead .tt-query,
 .twitter-typeahead .tt-hint {
-  height: 34px;
-  padding: 6px 12px;
+  height: @input-height-base;
+  padding: @padding-base-vertical @padding-base-horizontal;
   font-size: 14px;
   line-height: 1.428571429;
 }
 .twitter-typeahead .input-sm.tt-query,
 .twitter-typeahead .hint-sm.tt-hint {
-    border-radius: 3px;
+  border-radius: 3px;
 }
 .twitter-typeahead .input-lg.tt-query,
 .twitter-typeahead .hint-lg.tt-hint {
-    border-radius: 6px;
+  border-radius: 6px;
 }
 .input-group .twitter-typeahead:first-child .tt-query,
 .input-group .twitter-typeahead:first-child .tt-hint {
