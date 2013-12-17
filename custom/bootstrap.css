@@ -7816,6 +7816,12 @@ td.visible-print {
   outline: none;
 }
 
+.nav.nav-tabs .open > a,
+.nav.nav-tabs .open > a:hover,
+.nav.nav-tabs .open > a:focus {
+  border-color: rgba(0, 0, 0, 0);
+}
+
 .panel-primary .panel-title {
   color: #fff;
 }
